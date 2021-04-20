@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Household Chores To Do List</title>
+
+    <style>
+    * {
+        font-family: poppins;
+    }
+
+    .text-yellow {
+        color: #ffc107;
+    }
+
+    .container-fluid {
+        padding: 0rem 11rem;
+    }
+
+    .bg-yellow {
+        background-color: #ffc107;
+    }
+
+    #tabel {
+        margin-top: -10px;
+    }
+
+    #category .card {
+        transition: 0.3s;
+    }
+
+    #category .card:hover {
+        background-color: #ffc107;
+        transition: 0.3s;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info font-weight-bold">
+        <a class="navbar-brand" href="#"><i class="fas fa-house-user"></i> Household Chores To-Do List</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- ucapan selamat datang -->
+    <section id="welcome">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/house-chores-fix.png" width="100%" alt="">
+                    <a href="http://www.freepik.com">Designed by Freepik</a>
+                </div>
+                <div class="px-5 col-lg-6 my-auto">
+                    <h1 class="display-2">Selamat Datang</h1>
+                    <h3 class="text-yellow">di Household Chores To-Do List</h3>
+                    <div class="mt-4">
+                        <!-- button untuk menampilkan form tambah data pekerjaan yg di-link di bagian bawah -->
+                        <a class="btn btn-outline-success" href="#form" role="button">Tambahkan Pekerjaan</a>
+                        <!-- button untuk menampilkan tabel to-do list pekerjaan yg di-link di bagian bawah -->
+                        <a class="btn btn-outline-dark" href="#tabel" role="button">Lihat Pekerjaan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir ucapan selamat datang -->
+
+    <!-- mendefinisikan kategori -->
+    <section id="category">
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h1 class="display-3">Kategori</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-2 text-center my-auto">
+                                    <i class="fas fa-utensils fa-5x"></i>
+                                </div>
+                                <div class="col-lg-10">
+                                    <h5>Dapur</h5>
+                                    <p>Terkait dengan kegiatan di dapur, seperti membersihkan isi kulkas, membeli
+                                        kebutuhan pokok, menyiapkan sarapan, dsb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-2 text-center my-auto">
+                                    <i class="fas fa-hand-sparkles fa-5x"></i>
+                                </div>
+                                <div class="col-lg-10">
+                                    <h5>Kebersihan</h5>
+                                    <p>Terkait dengan bersih-bersih rumah, seperti menyapu tangga, mengepel lantai,
+                                        membersihkan
+                                        jendela, dsb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-2 text-center my-auto">
+                                    <i class="fas fa-bed fa-5x"></i>
+                                </div>
+                                <div class="col-lg-10">
+                                    <h5>Kamar</h5>
+                                    <p>Terkait dengan merapikan kamar, seperti mengganti sprei, merapikan lemari pakaian,
+                                        dsb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-2 text-center my-auto">
+                                    <i class="fas fa-car fa-5x"></i>
+                                </div>
+                                <div class="col-lg-10">
+                                    <h5>Lingkungan Luar</h5>
+                                    <p>Terkait dengan kegiatan di luar rumah, seperti membersihkan teras rumah, mencuci
+                                        mobil, menyiram tanaman, dsb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-2 text-center my-auto">
+                                    <i class="fas fa-graduation-cap fa-5x"></i>
+                                </div>
+                                <div class="col-lg-10">
+                                    <h5>Sekolah</h5>
+                                    <p>Terkait dengan kegiatan sekolah,seperti mengerjakan PR, membeli/meminjam buku,
+                                        menyiapkan buku pelajaran, dsb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-2 text-center my-auto">
+                                    <i class="fas fa-cat fa-5x"></i>
+                                </div>
+                                <div class="col-lg-10">
+                                    <h5>Hewan Peliharaan</h5>
+                                    <p>Terkait dengan merawat hewan peliharaan, seperti memandikan, memberi makan kucing, dsb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-2 text-center my-auto">
+                                    <i class="fas fa-shower fa-5x"></i>
+                                </div>
+                                <div class="col-lg-10">
+                                    <h5>Kamar Mandi</h5>
+                                    <p>Terkait dengan kamar mandi, seperti mengisi ulang stock sabun, membersihkan kamar
+                                        mandi, mencuci baju, dsb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-2 text-center my-auto">
+                                    <i class="fas fa-money-check-alt fa-5x"></i>
+                                </div>
+                                <div class="col-lg-10">
+                                    <h5>Bayaran</h5>
+                                    <p>Terkait dengan kegiatan membayar, seperti membayar tagihan listrik, membayar pajak,
+                                        membayar biaya air, dsb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir dari mendefinisikan kategori -->
+
+    <!-- form untuk menambahkan data pekerjaan -->
+    <section id="form">
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="mt-3 font-weight-bold">TAMBAH DATA PEKERJAAN</h3>
+                            <hr>
+                            <form action="index.php" method="POST">
+                                <div class="row mt-3">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="nama">Nama Pekerjaan</label>
+                                            <input type="text" class="form-control" id="nama" name="nama"
+                                                aria-describedby="namaHelp" placeholder="Masukkan nama pekerjaan" required>
+                                            <small id="namaHelp" class="form-text text-muted">Contoh: Mengganti sprei
+                                                kasur</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            <label for="tanggal">Tanggal Pengerjaan</label>
+                                            <input type="date" class="form-control" id="tanggal"
+                                                name="tanggal" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            <label for="waktu">Waktu Pengerjaan</label>
+                                            <input type="time" class="form-control" id="waktu"
+                                                name="waktu" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="detail">Detail</label>
+                                            <textarea class="form-control" id="detail" name="detail"
+                                                rows="2" required></textarea>
+                                            <small id="detailHelp" class="form-text text-muted">Contoh: kamar Papa,
+                                                kamar Mama, dan kamarku</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <label class="mr-lg-2" for="kategori">Kategori</label>
+                                            <select class="custom-select mr-sm-2" id="kategori" name="kategori" required>
+                                                <option disabled selected value="">- Pilih kategori -</option>
+                                                <option value="Dapur">Dapur</option>
+                                                <option value="Kebersihan">Kebersihan</option>
+                                                <option value="Kamar">Kamar</option>
+                                                <option value="Lingkungan Luar">Lingkungan Luar</option>
+                                                <option value="Sekolah">Sekolah</option>
+                                                <option value="Hewan Peliharaan">Hewan Peliharaan</option>
+                                                <option value="Kamar Mandi">Kamar Mandi</option>
+                                                <option value="Bayaran">Bayaran</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 my-auto">
+                                        <fieldset class="form-group">
+                                            <div class="row">
+                                                <legend class="col-form-label" style="color: #CDCDCD;">Prioritas
+                                                </legend>
+                                                <div class="col-lg-10">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="prioritas"
+                                                            id="prioritas_rendah" value="Rendah" checked required>
+                                                        <label class="form-check-label" for="prioritas_rendah">
+                                                            Rendah
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="prioritas"
+                                                            id="prioritas_sedang" value="Sedang" required>
+                                                        <label class="form-check-label" for="prioritas_sedang">
+                                                            Sedang
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="prioritas"
+                                                            id="prioritas_tinggi" value="Tinggi" required>
+                                                        <label class="form-check-label" for="prioritas_tinggi">
+                                                            Tinggi
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-lg-3 mx-auto">
+                                        <button type="submit" name="add" class="btn btn-outline-primary btn-block rounded"><i
+                                                class="fas fa-plus-circle"></i> Tambah</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir form untuk menambahkan data pekerjaan -->
+
+    <!-- divider halaman web -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffc107" fill-opacity="1"
+            d="M0,32L60,37.3C120,43,240,53,360,101.3C480,149,600,235,720,240C840,245,960,171,1080,149.3C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+    </svg>
+    <!-- akhir divider halaman web -->
+
+    <!-- tabel yang berisikan to-do list pekerjaan -->
+    <section id="tabel">
+        <div class="container-fluid bg-yellow">
+            <h1 class="font-weight-bold display-2">TO DO</h1>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="font-weight-bold">Sort Ascending</p>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <form action="index.php" method="POST">
+                                <!-- button untuk melakukan order sesuai nama, prioritas, tanggal, ataupun status -->
+                                <button type="submit" name="namaOrder" class="btn btn-outline-secondary">Nama</button>
+                                <button type="submit" name="prioritasOrder" class="btn btn-outline-secondary">Prioritas</button>
+                                <button type="submit" name="tanggalOrder" class="btn btn-outline-secondary">Tanggal</button>
+                                <button type="submit" name="statusOrder" class="btn btn-outline-secondary">Status</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-end">
+                            <form action="index.php" method="POST">
+                                <!-- button untuk mereset sortingan -->
+                                <button type="submit" name="reset" class="btn btn-outline-danger">Reset Sort</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- data to-do list pekerjaan yang diquery dari database -->
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-white font-weight-bold">No.</th>
+                                <th scope="col" class="text-white font-weight-bold">Nama Pekerjaan</th>
+                                <th scope="col" class="text-white font-weight-bold">Detail</th>
+                                <th scope="col" class="text-white font-weight-bold">Kategori</th>
+                                <th scope="col" class="text-white font-weight-bold">Prioritas</th>
+                                <th scope="col" class="text-white font-weight-bold">Tanggal</th>
+                                <th scope="col" class="text-white font-weight-bold">Waktu</th>
+                                <th scope="col" class="text-white font-weight-bold">Status</th>
+                                <th scope="col" class="text-white font-weight-bold">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                DATA_TABEL
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir tabel yang berisikan to-do list pekerjaan -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('body').bootstrapMaterialDesign();
+    });
+    </script>
+</body>
+
+</html>
